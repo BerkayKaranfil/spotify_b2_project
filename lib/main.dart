@@ -1,13 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:spotify_b2_project/providers/category_provider.dart';
+import 'package:spotify_b2_project/ui/pages/category_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    child: const MyApp(),
+    providers: [
+      ChangeNotifierProvider(
+        create: (context) => CategoryProvider(),
+      )
+    ],
+  ));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveSizer(
@@ -18,7 +33,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const MyHomePage(title: 'F'),
+          home: const CategoryPage(),
         );
       },
     );

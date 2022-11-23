@@ -4,6 +4,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../widgets/category_page_widgets/category_gridview_widget.dart';
+
 class CategoryPage extends StatefulWidget {
   const CategoryPage({super.key});
 
@@ -88,33 +90,7 @@ class _CategoryPageState extends State<CategoryPage> {
             SizedBox(
               height: 2.h,
             ),
-            SizedBox(
-              height: 57.h,
-              child: GridView.builder(
-                itemCount: 10,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 2.h,
-                    mainAxisSpacing: 2.h,
-                    childAspectRatio: 1,
-                    mainAxisExtent: 100
-                    ),
-                itemBuilder: (context, index) {
-                  return Container(
-                    height: 5.h,
-                    width: 10.h,
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(15),
-                      child: Text("Podcast'ler", style: GoogleFonts.inter(fontSize: 15, color: Colors.white),),
-                    ),
-                  );
-                },
-              ),
-            )
+            CategoryGridviewWidget()
           ],
         ),
       ),
