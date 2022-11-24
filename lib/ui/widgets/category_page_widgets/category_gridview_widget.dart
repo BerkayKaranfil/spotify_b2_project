@@ -51,7 +51,7 @@ class _CategoryGridviewWidgetState extends State<CategoryGridviewWidget> {
                       height: 5.h,
                       width: 10.h,
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.black,
                         borderRadius: BorderRadius.circular(8),
                         image: DecorationImage(image: NetworkImage(value.categoriesList.categories!.items![index].icons![0].url.toString()), fit: BoxFit.fitWidth)
                       ),

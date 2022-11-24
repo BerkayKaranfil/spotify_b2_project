@@ -5,6 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../widgets/category_page_widgets/category_gridview_widget.dart';
+import '../widgets/category_page_widgets/custom_textformfield_widget.dart';
+import 'artics_page.dart';
 
 class CategoryPage extends StatefulWidget {
   const CategoryPage({super.key});
@@ -14,6 +16,7 @@ class CategoryPage extends StatefulWidget {
 }
 
 class _CategoryPageState extends State<CategoryPage> {
+  int activepage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,39 +44,7 @@ class _CategoryPageState extends State<CategoryPage> {
             SizedBox(
               height: 4.h,
             ),
-            Container(
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(8)),
-              child: TextFormField(
-                  style: GoogleFonts.inter(color: Colors.white),
-                  cursorColor: Colors.white,
-                  decoration: InputDecoration(
-                      prefixIcon: IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.search,
-                            color: Colors.black,
-                          )),
-                      hintText: "Ne dinlemek istiyorsun?",
-                      hintStyle: TextStyle(color: Colors.black),
-                      /* labelText: "Ne dinlemek istiyorsun?",
-                      labelStyle: TextStyle(color: Colors.white),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(5),
-                        borderSide: BorderSide(color: Colors.white, width: 1),
-                      ), */
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white, width: 1),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.white,
-                            width: 1,
-                          ),
-                          borderRadius: BorderRadius.circular(8)),
-                      focusColor: Colors.white)),
-            ),
+            CustomTextFormFieldWidget(),
             SizedBox(
               height: 3.h,
             ),
@@ -90,10 +61,99 @@ class _CategoryPageState extends State<CategoryPage> {
             SizedBox(
               height: 2.h,
             ),
-            CategoryGridviewWidget()
+            CategoryGridviewWidget(),
+            Padding(
+              padding: EdgeInsets.only(right: 1.5.h, left: 1.5.h),
+              child: Container(
+                height: 49,
+                width: 400,
+                //color: Colors.black.withOpacity(0.2),
+                child: Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          activepage = 0;
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => CategoryPage(),
+                              ));
+                        });
+                      },
+                      child: Container(
+                        height: 45,
+                        width: 45,
+                        child: Icon(Icons.home,
+                            color:
+                                activepage == 0 ? Colors.green : Colors.black),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 13.w,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          activepage = 1;
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ArticsPage(),
+                              ));
+                        });
+                      },
+                      child: Container(
+                        height: 45,
+                        width: 45,
+                        child: Icon(Icons.search,
+                            color:
+                                activepage == 1 ? Colors.green : Colors.black),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 13.w,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          activepage = 2;
+                        });
+                      },
+                      child: Container(
+                        height: 45,
+                        width: 45,
+                        child: Icon(Icons.book_rounded,
+                            color:
+                                activepage == 2 ? Colors.green : Colors.black),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 13.w,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          activepage = 3;
+                        });
+                      },
+                      child: Container(
+                        height: 45,
+                        width: 45,
+                        child: Icon(Icons.circle,
+                            color:
+                                activepage == 3 ? Colors.green : Colors.black),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
+
+

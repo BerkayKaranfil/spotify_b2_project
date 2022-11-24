@@ -4,6 +4,12 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:spotify_b2_project/ui/pages/category_page.dart';
+
+import '../widgets/artics_page_widgets/artics_bottom_listview_widget.dart';
+import '../widgets/artics_page_widgets/artics_page_widget.dart';
+import '../widgets/artics_page_widgets/artics_top_image_widget.dart';
+import '../widgets/artics_page_widgets/artist_info_widget.dart';
 
 class ArticsPage extends StatefulWidget {
   const ArticsPage({super.key});
@@ -13,6 +19,7 @@ class ArticsPage extends StatefulWidget {
 }
 
 class _ArticsPageState extends State<ArticsPage> {
+  int activepage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,72 +32,11 @@ class _ArticsPageState extends State<ArticsPage> {
       ),
       body: Column(
         children: [
-          Stack(
-            children: [
-              SizedBox(
-                  width: double.infinity,
-                  child: Image.asset(
-                    "assets/rr.png",
-                    fit: BoxFit.cover,
-                  )),
-              Positioned(
-                top: 1.5.h,
-                left: 1.5.h,
-                child: SizedBox(
-                  width: 95.w,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      IconButton(
-                          onPressed: () {},
-                          icon: SvgPicture.asset("assets/popimage.svg")),
-                      Spacer(),
-                      IconButton(
-                          onPressed: () {},
-                          icon: SvgPicture.asset("assets/ucnokta.svg")),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
+          ArticsTopImageWidget(),
           SizedBox(
             height: 2.h,
           ),
-          Column(
-            children: [
-              Text(
-                "Billie Eilish",
-                style: GoogleFonts.inter(
-                    fontSize: 20,
-                    color: Color(0xff222222),
-                    fontWeight: FontWeight.bold),
-              ),
-              SizedBox(
-                height: 1.h,
-              ),
-              Text(
-                " 2 Album , 67 Track",
-                style: GoogleFonts.inter(
-                    fontSize: 13,
-                    color: Color(0xff393939),
-                    fontWeight: FontWeight.w400),
-              ),
-              SizedBox(
-                height: 1.h,
-              ),
-              Align(
-                alignment: Alignment.center,
-                child: Text(
-                  "     Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Turpis adipiscing vestibulum orci\n                enim, nascetur vitae ",
-                  style: GoogleFonts.inter(
-                      fontSize: 12,
-                      color: Color(0xff838383),
-                      fontWeight: FontWeight.w400),
-                ),
-              ),
-            ],
-          ),
+          ArtistInfoWidget(),
           SizedBox(
             height: 1.h,
           ),
@@ -106,45 +52,7 @@ class _ArticsPageState extends State<ArticsPage> {
                       color: Color(0xff222222)),
                 )),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15),
-            child: SizedBox(
-              height: 20.h,
-              width: double.infinity,
-              child: ListView.builder(
-                itemCount: 30,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.only(top: 15, right: 15),
-                    child: SizedBox(
-                      height: 20.h,
-                      child: Column(
-                        children: [
-                          Container(
-                              height: 15.h,
-                              width: 32.w,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(30)),
-                              child: Image.asset("assets/l1.png")),
-                          SizedBox(
-                            height: 1.h,
-                          ),
-                          Text(
-                            "lilbubblegum",
-                            style: GoogleFonts.inter(
-                                fontSize: 13,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xff3A3A3A)),
-                          )
-                        ],
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-          ),
+          ArticsListviewWidget(),
           SizedBox(
             height: 2.h,
           ),
@@ -176,65 +84,87 @@ class _ArticsPageState extends State<ArticsPage> {
           SizedBox(
             height: 1.h,
           ),
-          SizedBox(
-            height: 14.h,
-            child: ListView.builder(
-              itemCount: 2,
-              itemBuilder: (context, index) {
-                return Container(
-                  margin:
-                      EdgeInsets.only(left: 1.5.h, bottom: 1.5.h, right: 1.5.h),
-                  height: 6.h,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          SizedBox(
-                            height: 12.h,
-                            width: 6.h,
-                            child: SvgPicture.asset(
-                              "assets/play.svg",
-                            ),
-                          ),
-                          SizedBox(
-                            width: 5.w,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Dont Smile At Me",
-                                style: GoogleFonts.inter(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xff000000)),
-                              ),
-                              Text(
-                                "Billie Eilish",
-                                style: GoogleFonts.inter(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w400,
-                                    color: Color(0xff000000)),
-                              )
-                            ],
-                          )
-                        ],
-                      ),
-                      Container(
-                        height: 12.h,
-                        width: 6.w,
-                        child: SvgPicture.asset("assets/kalp.svg",color: Color(0xffC8C8C8)),
-                      )
-                    ],
+          ArticsBottomListviewWidget(),
+          Padding(
+            padding: EdgeInsets.only(right: 1.5.h, left: 1.5.h),
+            child: Container(
+              height: 49,
+              width: 400,
+              //color: Colors.black.withOpacity(0.2),
+              child: Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        activepage = 0;
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ArticsPage(),));
+                      });
+                    },
+                    child: Container(
+                      height: 45,
+                      width: 45,
+                      child: Icon(Icons.home, color: activepage == 0 ? Colors.green : Colors.black),
+                    ),
                   ),
-                );
-              },
+                  SizedBox(
+                    width: 16.w,
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        activepage = 1;
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryPage(),));
+                      });
+                    },
+                    child: Container(
+                      height: 45,
+                      width: 45,
+                      child: Icon(Icons.search, color: activepage == 1 ? Colors.green : Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 16.w,
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        activepage = 2;
+                      });
+                    },
+                    child: Container(
+                      height: 45,
+                      width: 45,
+                      child: Icon(Icons.book_rounded, color: activepage == 2 ? Colors.green : Colors.black),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 16.w,
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        activepage = 3;
+                      });
+                    },
+                    child: Container(
+                      height: 45,
+                      width: 45,
+                      child: Icon(Icons.circle, color: activepage == 3 ? Colors.green : Colors.black),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
+          )
           // bottom navigation bar gelicek.
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
