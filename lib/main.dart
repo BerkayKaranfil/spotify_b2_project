@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:spotify_b2_project/providers/category_provider.dart';
+import 'package:spotify_b2_project/providers/profile_provider.dart';
 import 'package:spotify_b2_project/ui/pages/artics_page.dart';
 import 'package:spotify_b2_project/ui/pages/category_page.dart';
 import 'package:spotify_b2_project/ui/pages/profile_page.dart';
@@ -12,7 +13,8 @@ void main() {
     providers: [
       ChangeNotifierProvider(
         create: (context) => CategoryProvider(),
-      )
+      ),
+      ChangeNotifierProvider(create: (context) => ProfileProvider(),)
     ],
   ));
 }

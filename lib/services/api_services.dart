@@ -1,8 +1,10 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:spotify_b2_project/providers/profile_provider.dart';
 
 import '../models/category_response.dart';
+import '../models/profile_response.dart';
 import '../providers/category_provider.dart';
 
 //void main() async {
@@ -31,27 +33,30 @@ import '../providers/category_provider.dart';
   
 }
 
-/* // ignore_for_file: unused_local_variable
 
-import 'dart:convert';
 
-import 'package:http/http.dart' as http;
-import 'package:spotify_api_onur/src/providers/categories_provider.dart';
 
-import '../models/categories_model.dart';
 
-Future<CategoriesModel> getCategoriesService() async {
-  CategoriesModel? data;
-  CategoriesProvider? categoriesProvider;
-  var headers = {
+//void main() async {
+  Future<ProfileModel> getProfileService() async {
+     ProfileModel? data1;
+     ProfileProvider? profileProvider;
+
+var headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'Authorization':
-        'Bearer BQBuyApt5otuXeGz9L-YcaCM-JtTNfWeNvCgezmJwxE3Rvc-dPo-CG802-LA27vBdzw9tGZZ-SDlpwJX9IrVyGxE74rnID8QXUIxLSGeFYLdtS9-dpp76Z7RyN4qFg1brcuxha7Ehg7h8g0xTMPDkNtg9OrGuEmac5lSe8OBoOhlem35lp0rYoPzUdgzEhWFcpzARx_x6IaXy0cZ8UQqag2FWmdPfy_pgwg1xdrtt0RpKqgxQYAMKcBbTbh_khuJxBO6Uyw3A6R1AnVJZ9aaURv8XbV85BuHlE3oh9GKv-FT',
+    'Authorization': 'Bearer BQCa2j01pO_Nbiq4IgrMoERRAyxHyFt_qAkQc-iq_yBLP7umULvmoXJZ2EOb-JNs9MtDNuVAMYXM26hR6rtXwPOLJP7UDfJ8FzRkEhorqlcviEU7EzdcaFMScMZPJV_UTzH66IqYwutW4CqCS6g3gAT3lpKwzgiiYtnnmuvb4GVlHGhhU45mJbFhbRnIVjtGLIxsIa3pVJGM6wUJur2EF_LtiG1vEf2W7VlkbAfTt2vF72AfaUvizxyoE7AoEWaitp_VFlwioAbPp9efyCP4c_WMx8rD06KaBaN8L5nK2mH6ub43D-8ViXAZwa2ZRsCrs-kuZw',
   };
-//BQBlvCXpNT_N7SZaix8xEDGdu3VSrDxS99kRTmPRyizpWAoWewBWpoBskpi14BeVpSsQv1PkpPynF7SImbZDaBqCrYkpIHcbaf7bgOtRlfq7rU80fGEqxoeFY0xyDg3C-3V1KQQ5sum1_wXIP4KVzlswiucCxK9yp7aHKvaBO2TZP9Ov6LuVFOv_-WWrZYbjeljIyPJsJtfACUtzPSj6wgXivqG_PJiGtQ30bQ-0emSTdlLQ1eHtjPxmIgP6SivnwpK3kKTE3CUW2rUSjrM0PGfXa-QYVRwqTeDjeeORtYse
-  var url = Uri.parse('https://api.spotify.com/v1/browse/categories');
-  var res = await http.get(url, headers: headers);
 
-  return data = CategoriesModel.fromJson(jsonDecode(res.body));
-} */
+  var url = Uri.parse('https://api.spotify.com/v1/me');
+  var res = await http.get(url, headers: headers);
+ // if (res.statusCode != 200) throw Exception('http.get error: statusCode= ${res.statusCode}');
+  //print(res.body);
+  return data1 = ProfileModel.fromJson(jsonDecode(res.body));
+  }
+  
+
+
+
+
+
