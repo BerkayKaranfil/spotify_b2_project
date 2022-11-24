@@ -32,12 +32,12 @@ class CustomTextFormFieldWidget extends StatelessWidget {
                 borderSide: BorderSide(color: Colors.white, width: 1),
               ), */
               enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.white, width: 1),
+                borderSide: BorderSide(color: Color(0xff222222), width: 1),
                 borderRadius: BorderRadius.circular(8),
               ),
               focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Colors.white,
+                    color: Color(0xff222222),
                     width: 1,
                   ),
                   borderRadius: BorderRadius.circular(8)),

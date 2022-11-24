@@ -22,7 +22,9 @@ class _CategoryPageState extends State<CategoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 31, 30, 30),
+      resizeToAvoidBottomInset: false,
+     // backgroundColor: Color.fromARGB(255, 31, 30, 30),
+     backgroundColor: Color(0xffFAFAFA),
       appBar: AppBar(
         toolbarHeight: 0,
         elevation: 0,
@@ -41,7 +43,7 @@ class _CategoryPageState extends State<CategoryPage> {
               style: GoogleFonts.inter(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white),
+                  color: Color(0xff222222)),
             ),
             SizedBox(
               height: 4.h,
@@ -55,7 +57,7 @@ class _CategoryPageState extends State<CategoryPage> {
                 Spacer(),
                 Text(
                   "Hepsine göz at",
-                  style: GoogleFonts.inter(fontSize: 22, color: Colors.white),
+                  style: GoogleFonts.inter(fontSize: 22, color: Color(0xff222222)),
                 ),
                 Spacer()
               ],

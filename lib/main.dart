@@ -6,6 +6,7 @@ import 'package:spotify_b2_project/providers/category_provider.dart';
 import 'package:spotify_b2_project/providers/profile_provider.dart';
 import 'package:spotify_b2_project/ui/pages/artics_page.dart';
 import 'package:spotify_b2_project/ui/pages/category_page.dart';
+import 'package:spotify_b2_project/ui/pages/home_page.dart';
 import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 
 void main() {
@@ -39,7 +40,7 @@ class _MyAppState extends State<MyApp> {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const CategoryPage(),
+          home: const Homepage(),
         );
       },
     );
