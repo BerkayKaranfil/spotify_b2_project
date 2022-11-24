@@ -71,11 +71,13 @@ class _CategoryGridviewWidgetState extends State<CategoryGridviewWidget> {
                   : SizedBox(
                       height: 65.h,
                       child: Shimmer.fromColors(
-                          child: Center(
-                            child: Text("deneme"),
+                          child: Container(
+                            height: 5.h,
+                            width: 10.h,
+                            color: Colors.blue,
                           ),
-                          baseColor: Colors.red,
-                          highlightColor: Colors.blue),
+                          baseColor: Colors.grey.withOpacity(0.5),
+                          highlightColor: Colors.grey.withOpacity(0.7)),
                     );
             },
           ),
