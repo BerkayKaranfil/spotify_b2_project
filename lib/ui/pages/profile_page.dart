@@ -163,7 +163,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
           ),
           SizedBox(
-            height: 3.h,
+            height: 1.h,
           ),
           Container(
             height: 340,
@@ -215,7 +215,13 @@ class _ProfilePageState extends State<ProfilePage> {
                           )
                         ],
                       ),
-                      // Buraya şarkı süresi gelecek.
+                      Text(
+                        "5:33",
+                        style: GoogleFonts.inter(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xff000000)),
+                      ),
                       Container(
                         height: 12.h,
                         width: 6.w,
