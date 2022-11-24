@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 
 import '../widgets/category_page_widgets/category_gridview_widget.dart';
 import '../widgets/category_page_widgets/custom_textformfield_widget.dart';
@@ -118,6 +119,7 @@ class _CategoryPageState extends State<CategoryPage> {
                       onTap: () {
                         setState(() {
                           activepage = 2;
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage(),));
                         });
                       },
                       child: Container(

@@ -26,7 +26,9 @@ class ArticsTopImageWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                     icon: SvgPicture.asset("assets/popimage.svg")),
                 Spacer(),
                 IconButton(

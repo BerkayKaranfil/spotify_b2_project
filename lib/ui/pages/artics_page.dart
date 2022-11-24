@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:spotify_b2_project/ui/pages/category_page.dart';
+import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 
 import '../widgets/artics_page_widgets/artics_bottom_listview_widget.dart';
 import '../widgets/artics_page_widgets/artics_page_widget.dart';
@@ -129,6 +130,7 @@ class _ArticsPageState extends State<ArticsPage> {
                     onTap: () {
                       setState(() {
                         activepage = 2;
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage(),));
                       });
                     },
                     child: Container(
