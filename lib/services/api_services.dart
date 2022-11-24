@@ -12,7 +12,7 @@ import '../providers/category_provider.dart';
   var headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer BQBClfOovAj3VNYex9fpseiS1WT-U5kJhHRq3iqt9hN67-ARxXck34BmZDD6E3fVW9h1biiyvnp0ZU0Llz1qiiCRrxxgbytbzfqdkw7EIccEk4UhzT4_C5HBk1xToG-rF4E37e86I44J9BTv9LQ1diCzxSe8Shsf_mxNzvp2Ke60FJlijatk4mxkPxpxNLcSsqKV9hxyhLhsb56QHwx4D7UHkePysS162y43xdQ8V6x9f5OhBsFzGrJE-hX7g6rwC_CvbXTxeabX-TT_0g4oZyhPeh2ZbDlB6wuUgFAL',
+    'Authorization': 'Bearer BQBGHGQvkRb5TvzfkwVhclnuCNqM9gjh0oPGQiB7W0NQuDMJpdLdC2ZCuY1Eh3a7lLAcWBoQoKnBvvLQo9G_eTHFRgah8A8_YkhYdExIZMMwXarqeQmCrhmpDz1S4Lk4KyZarYjUyt1EW7nFJmCyI41a-eAZ8I5AZYkXX9nLUbQz69PbVos7CiHZIp9ehgOG8-2dPlyFWR8_cdKbQXHAClkSpuOnwDw8DuX7Ex3a_K7o5RjW0zFhrhhkC9QyUpC4JDLxC7F_oZyA4v-WVH2C-exAApqYBKpooILzK6dN',
   };
 
   /* var params = {

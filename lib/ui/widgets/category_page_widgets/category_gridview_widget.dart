@@ -53,15 +53,18 @@ class _CategoryGridviewWidgetState extends State<CategoryGridviewWidget> {
                       decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(8),
-                        image: DecorationImage(image: NetworkImage(value.categoriesList.categories!.items![index].icons![0].toString()), fit: BoxFit.fitWidth)
+                        image: DecorationImage(image: NetworkImage(value.categoriesList.categories!.items![index].icons![0].url.toString()), fit: BoxFit.fitWidth)
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(15),
-                        child: Text(
-                         // "Podcast'ler",
-                          value.categoriesList.categories!.items![index].name.toString(),
-                          style: GoogleFonts.inter(
-                              fontSize: 15, color: Colors.white),
+                        child: Align(
+                          alignment: Alignment.bottomLeft,
+                          child: Text(
+                           // "Podcast'ler",
+                            value.categoriesList.categories!.items![index].name.toString(),
+                            style: GoogleFonts.inter(
+                                fontSize: 15, color: Colors.white),
+                          ),
                         ),
                       ),
                     )
