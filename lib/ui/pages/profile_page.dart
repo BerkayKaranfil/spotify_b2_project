@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:spotify_b2_project/ui/widgets/bottom_bar_widget.dart';
 
 import '../widgets/profile_page_widgets/profile_chart_widget.dart';
 import '../widgets/profile_page_widgets/profile_listview_widget.dart';
@@ -48,6 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
           ProfilePageListViewWidget()
         ],
       ),
+    //  bottomNavigationBar: CustomBottomBarWidget(),
     );
   }
 }

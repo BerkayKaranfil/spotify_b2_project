@@ -11,6 +11,7 @@ import '../widgets/artics_page_widgets/artics_bottom_listview_widget.dart';
 import '../widgets/artics_page_widgets/artics_page_widget.dart';
 import '../widgets/artics_page_widgets/artics_top_image_widget.dart';
 import '../widgets/artics_page_widgets/artist_info_widget.dart';
+import '../widgets/bottom_bar_widget.dart';
 
 class ArticsPage extends StatefulWidget {
   const ArticsPage({super.key});
@@ -161,6 +162,7 @@ class _ArticsPageState extends State<ArticsPage> {
           // bottom navigation bar gelicek.
         ],
       ),
+     // bottomNavigationBar: CustomBottomBarWidget(),
     );
   }
 }
