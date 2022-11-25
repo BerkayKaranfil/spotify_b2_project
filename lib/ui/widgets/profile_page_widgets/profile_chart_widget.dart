@@ -7,6 +7,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:shimmer/shimmer.dart';
 import 'package:spotify_b2_project/providers/profile_provider.dart';
 
 class ProfileChartWidget extends StatefulWidget {
@@ -36,7 +37,8 @@ class _ProfileChartWidgetState extends State<ProfileChartWidget> {
   @override
   Widget build(BuildContext context) {
     return Consumer<ProfileProvider>(builder: (context, value, Widget) {
-      return Container(
+      return value.profileList.followers != null
+     ? Container(
       height: 40.h,
       width: double.infinity,
       decoration: BoxDecoration(
@@ -170,7 +172,12 @@ class _ProfileChartWidgetState extends State<ProfileChartWidget> {
           )
         ],
       ),
-    );
+    )
+    : 
+   // LinearProgressIndicator();
+   Shimmer.fromColors(child: Container(
+    height: 40.h,
+   ), baseColor: Colors.blue.withOpacity(0.5), highlightColor: Colors.red.withOpacity(0.7));
     },);
   }
 }

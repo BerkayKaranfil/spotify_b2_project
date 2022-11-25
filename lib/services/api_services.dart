@@ -14,7 +14,7 @@ import '../providers/category_provider.dart';
   var headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer BQBGHGQvkRb5TvzfkwVhclnuCNqM9gjh0oPGQiB7W0NQuDMJpdLdC2ZCuY1Eh3a7lLAcWBoQoKnBvvLQo9G_eTHFRgah8A8_YkhYdExIZMMwXarqeQmCrhmpDz1S4Lk4KyZarYjUyt1EW7nFJmCyI41a-eAZ8I5AZYkXX9nLUbQz69PbVos7CiHZIp9ehgOG8-2dPlyFWR8_cdKbQXHAClkSpuOnwDw8DuX7Ex3a_K7o5RjW0zFhrhhkC9QyUpC4JDLxC7F_oZyA4v-WVH2C-exAApqYBKpooILzK6dN',
+    'Authorization': 'Bearer BQAlBfizH6bCDw-5ofG5vhi2tnOF7WYoOsxIWjuhojY29eOSXxPB-olYtUEh-iTxf9Wpkq6OCkodx6eL4o4ZyRyYKyGULiepEDqRID17hfTQ8LCuNYqU-cPE9xF_WsL6ItgYP2F1HfxdR0u9rlPgunBgl5MsY9h1imRMqrUPPoI8ZREoW8AV22e_Hm7WcCRLDKhYKNa_M8lAXKJGIjfsAUEthD0knLxASRpwJefoaP5YlPF-VL7QQdk-HlPFrfqzoMhq3Rq8neXyM2yD701CU7Br1-f4tA-2HajsmELL',
   };
 
   /* var params = {
@@ -45,7 +45,7 @@ import '../providers/category_provider.dart';
 var headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer BQCa2j01pO_Nbiq4IgrMoERRAyxHyFt_qAkQc-iq_yBLP7umULvmoXJZ2EOb-JNs9MtDNuVAMYXM26hR6rtXwPOLJP7UDfJ8FzRkEhorqlcviEU7EzdcaFMScMZPJV_UTzH66IqYwutW4CqCS6g3gAT3lpKwzgiiYtnnmuvb4GVlHGhhU45mJbFhbRnIVjtGLIxsIa3pVJGM6wUJur2EF_LtiG1vEf2W7VlkbAfTt2vF72AfaUvizxyoE7AoEWaitp_VFlwioAbPp9efyCP4c_WMx8rD06KaBaN8L5nK2mH6ub43D-8ViXAZwa2ZRsCrs-kuZw',
+    'Authorization': 'Bearer BQAlBfizH6bCDw-5ofG5vhi2tnOF7WYoOsxIWjuhojY29eOSXxPB-olYtUEh-iTxf9Wpkq6OCkodx6eL4o4ZyRyYKyGULiepEDqRID17hfTQ8LCuNYqU-cPE9xF_WsL6ItgYP2F1HfxdR0u9rlPgunBgl5MsY9h1imRMqrUPPoI8ZREoW8AV22e_Hm7WcCRLDKhYKNa_M8lAXKJGIjfsAUEthD0knLxASRpwJefoaP5YlPF-VL7QQdk-HlPFrfqzoMhq3Rq8neXyM2yD701CU7Br1-f4tA-2HajsmELL',
   };
 
   var url = Uri.parse('https://api.spotify.com/v1/me');

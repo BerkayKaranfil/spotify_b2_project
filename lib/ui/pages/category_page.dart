@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:spotify_b2_project/ui/pages/home_page.dart';
 import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 import 'package:spotify_b2_project/ui/widgets/bottom_bar_widget.dart';
 
@@ -66,7 +67,7 @@ class _CategoryPageState extends State<CategoryPage> {
               height: 2.h,
             ),
             CategoryGridviewWidget(),
-             Padding(
+              Padding(
               padding: EdgeInsets.only(right: 1.5.h, left: 1.5.h),
               child: Container(
                 height: 49,
@@ -140,6 +141,7 @@ class _CategoryPageState extends State<CategoryPage> {
                       onTap: () {
                         setState(() {
                           activepage = 3;
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Homepage(),));
                         });
                       },
                       child: Container(
@@ -153,11 +155,11 @@ class _CategoryPageState extends State<CategoryPage> {
                   ],
                 ),
               ),
-            ) 
+            )  
           ],
         ),
       ),
-    //  bottomNavigationBar: CustomBottomBarWidget(),
+     // bottomNavigationBar: CustomBottomBarWidget(),
     );
   }
 }
