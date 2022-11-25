@@ -13,7 +13,7 @@ class BottomNavProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  pageChange(int index) {
+  pageChange() {
     switch (selectedIndex) {
       case 0:
         return const CategoryPage();

@@ -16,7 +16,7 @@ Future<CategoriesModel> getCategoryService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQA4oX1rzq3x5u5ZQ29EzT7r4slGUjwlm8IFrrnA1IfV4So-McJFsn1z84t5QvV0RIWqFFUELvQds02_ZUfJ3zIbs5FVxssj0-6CZsNsBLji7s05qaq93NbzMH-nw3Qvy3y9H7QIT26FNf4KHS4e9iSlnDMFceF_K9p88UoqttahotxDRjxEfnbJnICKrw9v40GPAqH7gl1KTBKkwKHj44gwwIoR-ZEElYi9cH9qOVdqcV98wB7-68sLTzZIar3BwmENsmjQ-QVSmrvrTu8l83QYWl93mtmrjS5Tu_0c',
+        'Bearer BQB59ZA1UOKtCtJVg1hFueKyN9oLWvjq34l67TWlRJL2knXWS2d04Tzh_jU_CdPqxKlR-fyXMk7fAieC2Q34JyouR7l7Ol1gQbZn5eicz6jIq-Y01-fgB5AzfoYVjhckQt2dNVNihsbokuyNc508m-bCEM73SDlPJXcAo5hFGVmLnN73KkkF-mws3K8HKUTkw2DtruEs4fKN5D1r4j_4Bb3qP58KKLcyZQT5SYSv47yRHsZwLy7y2J9kpSmEAVGh25ncwppp-0kwvy9gnTh3faXaT90Xsld35V8dy9m0U-miU_F-BW_lKv49MMW5S3iuIeFYhA',
   };
 
   /* var params = {
@@ -43,7 +43,7 @@ Future<ProfileModel> getProfileService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQA4oX1rzq3x5u5ZQ29EzT7r4slGUjwlm8IFrrnA1IfV4So-McJFsn1z84t5QvV0RIWqFFUELvQds02_ZUfJ3zIbs5FVxssj0-6CZsNsBLji7s05qaq93NbzMH-nw3Qvy3y9H7QIT26FNf4KHS4e9iSlnDMFceF_K9p88UoqttahotxDRjxEfnbJnICKrw9v40GPAqH7gl1KTBKkwKHj44gwwIoR-ZEElYi9cH9qOVdqcV98wB7-68sLTzZIar3BwmENsmjQ-QVSmrvrTu8l83QYWl93mtmrjS5Tu_0c',
+        'Bearer BQB59ZA1UOKtCtJVg1hFueKyN9oLWvjq34l67TWlRJL2knXWS2d04Tzh_jU_CdPqxKlR-fyXMk7fAieC2Q34JyouR7l7Ol1gQbZn5eicz6jIq-Y01-fgB5AzfoYVjhckQt2dNVNihsbokuyNc508m-bCEM73SDlPJXcAo5hFGVmLnN73KkkF-mws3K8HKUTkw2DtruEs4fKN5D1r4j_4Bb3qP58KKLcyZQT5SYSv47yRHsZwLy7y2J9kpSmEAVGh25ncwppp-0kwvy9gnTh3faXaT90Xsld35V8dy9m0U-miU_F-BW_lKv49MMW5S3iuIeFYhA',
   };
 
   var url = Uri.parse('https://api.spotify.com/v1/me');
@@ -62,7 +62,7 @@ Future<PublicPlaylistModel> getPublicPlaylistService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQA4oX1rzq3x5u5ZQ29EzT7r4slGUjwlm8IFrrnA1IfV4So-McJFsn1z84t5QvV0RIWqFFUELvQds02_ZUfJ3zIbs5FVxssj0-6CZsNsBLji7s05qaq93NbzMH-nw3Qvy3y9H7QIT26FNf4KHS4e9iSlnDMFceF_K9p88UoqttahotxDRjxEfnbJnICKrw9v40GPAqH7gl1KTBKkwKHj44gwwIoR-ZEElYi9cH9qOVdqcV98wB7-68sLTzZIar3BwmENsmjQ-QVSmrvrTu8l83QYWl93mtmrjS5Tu_0c',
+        'Bearer BQB59ZA1UOKtCtJVg1hFueKyN9oLWvjq34l67TWlRJL2knXWS2d04Tzh_jU_CdPqxKlR-fyXMk7fAieC2Q34JyouR7l7Ol1gQbZn5eicz6jIq-Y01-fgB5AzfoYVjhckQt2dNVNihsbokuyNc508m-bCEM73SDlPJXcAo5hFGVmLnN73KkkF-mws3K8HKUTkw2DtruEs4fKN5D1r4j_4Bb3qP58KKLcyZQT5SYSv47yRHsZwLy7y2J9kpSmEAVGh25ncwppp-0kwvy9gnTh3faXaT90Xsld35V8dy9m0U-miU_F-BW_lKv49MMW5S3iuIeFYhA',
   };
 
   /*  var params = {
