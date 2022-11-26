@@ -67,7 +67,7 @@ class _CategoryPageState extends State<CategoryPage> {
               height: 2.h,
             ),
             CategoryGridviewWidget(),
-              Padding(
+              /* Padding(
               padding: EdgeInsets.only(right: 1.5.h, left: 1.5.h),
               child: Container(
                 height: 49,
@@ -155,11 +155,11 @@ class _CategoryPageState extends State<CategoryPage> {
                   ],
                 ),
               ),
-            )  
+            ) */  
           ],
         ),
       ),
-     // bottomNavigationBar: CustomBottomBarWidget(),
+     
     );
   }
 }

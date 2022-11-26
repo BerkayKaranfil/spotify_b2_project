@@ -29,7 +29,7 @@ class _ProfilePageListViewWidgetState extends State<ProfilePageListViewWidget> {
     return Consumer<ProfileProvider>(
       builder: (context, value, widget) {
         return Container(
-          height: 340,
+          height: 43.8.h,
           child: ListView.builder(
             itemCount: 10,
             itemBuilder: (context, index) {

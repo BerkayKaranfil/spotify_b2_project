@@ -51,7 +51,7 @@ class _ProfilePageState extends State<ProfilePage> {
             height: 1.h,
           ),
           ProfilePageListViewWidget(),
-           Padding(
+           /* Padding(
               padding: EdgeInsets.only(right: 1.5.h, left: 1.5.h),
               child: Container(
                 height: 49,
@@ -139,10 +139,10 @@ class _ProfilePageState extends State<ProfilePage> {
                   ],
                 ),
               ),
-            )  
+            )  */ 
         ],
       ),
-    //  bottomNavigationBar: CustomBottomBarWidget(),
+    
     );
   }
 }

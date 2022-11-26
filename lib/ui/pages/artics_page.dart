@@ -57,7 +57,7 @@ class _ArticsPageState extends State<ArticsPage> {
           ),
           ArticsListviewWidget(),
           SizedBox(
-            height: 2.h,
+            height: 1.h,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -88,7 +88,7 @@ class _ArticsPageState extends State<ArticsPage> {
             height: 1.h,
           ),
           ArticsBottomListviewWidget(),
-          Padding(
+          /* Padding(
             padding: EdgeInsets.only(right: 1.5.h, left: 1.5.h),
             child: Container(
               height: 49,
@@ -160,11 +160,11 @@ class _ArticsPageState extends State<ArticsPage> {
                 ],
               ),
             ),
-          )
-          // bottom navigation bar gelicek.
+          ) */
+          
         ],
       ),
-     // bottomNavigationBar: CustomBottomBarWidget(),
+     
     );
   }
 }
