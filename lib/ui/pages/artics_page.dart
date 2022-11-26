@@ -22,7 +22,7 @@ class ArticsPage extends StatefulWidget {
 }
 
 class _ArticsPageState extends State<ArticsPage> {
-  int activepage = 0;
+ // int activepage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

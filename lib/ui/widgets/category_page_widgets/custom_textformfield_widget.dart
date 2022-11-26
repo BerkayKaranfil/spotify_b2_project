@@ -14,7 +14,7 @@ class CustomTextFormFieldWidget extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(8)),
       child: TextFormField(
-          style: GoogleFonts.inter(color: Colors.white),
+          style: GoogleFonts.inter(color: Color(0xff222222)),
           cursorColor: Colors.white,
           decoration: InputDecoration(
               prefixIcon: IconButton(

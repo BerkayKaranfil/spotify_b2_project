@@ -21,7 +21,7 @@ class _CustomBottomBarWidgetState extends State<CustomBottomBarWidget> {
               currentIndex: value.selectedIndex,
               onTap: (index) {
                 value.changeIndex(index);
-               // value.pageChange(index);
+
                 print(index);
               },
               elevation: 0,

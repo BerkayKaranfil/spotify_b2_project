@@ -172,18 +172,14 @@ class _HomepageState extends State<Homepage> {
           Container(
             height: 30.h,
             width: 100.w,
-            //color: Colors.red,
             child: ListView.builder(
               itemCount: 5,
-              // physics: NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
-              //shrinkWrap: true,
               itemBuilder: (context, index) {
                 return Container(
                   margin: EdgeInsets.only(top: 0.5.h, left: 3.w),
                   height: 40.h,
                   width: 38.w,
-                  // color: Colors.blue,
                   child: Column(
                     children: [
                       Container(
@@ -293,7 +289,13 @@ class _HomepageState extends State<Homepage> {
                             )
                           ],
                         ),
-                        Text("5:33", style: GoogleFonts.inter(fontSize: 15, fontWeight: FontWeight.w400, color: Color(0xff000000)),),
+                        Text(
+                          "5:33",
+                          style: GoogleFonts.inter(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xff000000)),
+                        ),
                         Container(
                           height: 12.h,
                           width: 6.w,

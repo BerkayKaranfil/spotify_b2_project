@@ -17,8 +17,12 @@ void main() {
       ChangeNotifierProvider(
         create: (context) => CategoryProvider(),
       ),
-      ChangeNotifierProvider(create: (context) => ProfileProvider(),),
-      ChangeNotifierProvider(create: (context) => BottomNavProvider(),)
+      ChangeNotifierProvider(
+        create: (context) => ProfileProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => BottomNavProvider(),
+      )
     ],
   ));
 }
@@ -49,24 +53,24 @@ class _MyAppState extends State<MyApp> {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key,});
-
-  
+  const MyHomePage({
+    super.key,
+  });
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-
   @override
   Widget build(BuildContext context) {
-    return Consumer<BottomNavProvider>(builder: (context, value, widget) {
-      return Scaffold(
-      body: value.pageChange(),
-      bottomNavigationBar: CustomBottomBarWidget(),
+    return Consumer<BottomNavProvider>(
+      builder: (context, value, widget) {
+        return Scaffold(
+          body: value.pageChange(),
+          bottomNavigationBar: CustomBottomBarWidget(),
+        );
+      },
     );
-    },);
   }
 }

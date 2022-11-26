@@ -20,7 +20,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  int activepage = 0;
+ // int activepage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
