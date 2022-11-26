@@ -36,7 +36,7 @@ class _CategoryGridviewWidgetState extends State<CategoryGridviewWidget> {
     return Consumer<CategoryProvider>(
       builder: (context, value, Widget) {
         return SizedBox(
-          height: 57.h,
+          height: 65.h,
           child: GridView.builder(
             itemCount: 10,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

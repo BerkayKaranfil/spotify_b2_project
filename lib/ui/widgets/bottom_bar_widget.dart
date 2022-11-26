@@ -26,37 +26,43 @@ class _CustomBottomBarWidgetState extends State<CustomBottomBarWidget> {
               },
               elevation: 0,
               type: BottomNavigationBarType.fixed,
-              backgroundColor: Color.fromARGB(255, 31, 30, 30),
+              backgroundColor: Color(0xffFFFFFF),
+             // backgroundColor: Colors.transparent,
+
               items: [
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home,
-                    color:
-                        value.selectedIndex == 0 ? Colors.green : Colors.white,
+                  icon: Image.asset(
+                    "assets/home.png",
+                    color: value.selectedIndex == 0
+                        ? Colors.green
+                        : Color(0xff808080),
                   ),
                   label: "",
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.search,
-                    color:
-                        value.selectedIndex == 1 ? Colors.green : Colors.white,
+                  icon: Image.asset(
+                    "assets/discovery.png",
+                    color: value.selectedIndex == 1
+                        ? Colors.green
+                        : Color(0xff808080),
                   ),
                   label: "",
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.book_rounded,
-                    color:
-                        value.selectedIndex == 2 ? Colors.green : Colors.white,
+                  icon: Image.asset(
+                    "assets/heart.png",
+                    color: value.selectedIndex == 2
+                        ? Colors.green
+                        : Color(0xff808080),
                   ),
                   label: "",
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.circle,
-                    color:
-                        value.selectedIndex == 3 ? Colors.green : Colors.white,
+                  icon: Image.asset(
+                    "assets/profile.png",
+                    color: value.selectedIndex == 3
+                        ? Colors.green
+                        : Color(0xff808080),
                   ),
                   label: "",
                 ),

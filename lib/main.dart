@@ -40,6 +40,7 @@ class _MyAppState extends State<MyApp> {
     return ResponsiveSizer(
       builder: (context, orientation, screenType) {
         return MaterialApp(
+          
           debugShowCheckedModeBanner: false,
           title: '',
           theme: ThemeData(
@@ -67,6 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Consumer<BottomNavProvider>(
       builder: (context, value, widget) {
         return Scaffold(
+          extendBody: true,
           body: value.pageChange(),
           bottomNavigationBar: CustomBottomBarWidget(),
         );
