@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:shimmer/shimmer.dart';
 import 'package:spotify_b2_project/providers/artics_provider.dart';
 
 class ArticsListviewWidget extends StatefulWidget {
@@ -15,9 +17,13 @@ class ArticsListviewWidget extends StatefulWidget {
 
 class _ArticsListviewWidgetState extends State<ArticsListviewWidget> {
   ArticsProvider? data3;
+  bool? categoryListLoaded;
 
   @override
   void initState() {
+    categoryListLoaded = true;
+    Future.delayed(Duration(seconds: 2));
+    categoryListLoaded = false;
     super.initState();
     data3 = Provider.of<ArticsProvider>(context, listen: false);
     data3!.getAlbumsPlaylist();
@@ -37,7 +43,8 @@ class _ArticsListviewWidgetState extends State<ArticsListviewWidget> {
               //value.articsAlbumList.tracks![0].album!.images![0].url!.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Padding(
+                return value.articsAlbumList.tracks !=null
+                ?Padding(
                   padding: const EdgeInsets.only(top: 15, right: 15),
                   child: SizedBox(
                     height: 20.h,
@@ -72,7 +79,10 @@ class _ArticsListviewWidgetState extends State<ArticsListviewWidget> {
                       ],
                     ),
                   ),
-                );
+                )
+                : Shimmer.fromColors(child: Container(
+                  height: 20.h,
+                ), baseColor: Colors.grey.withOpacity(0.5), highlightColor: Colors.grey.withOpacity(0.7));
               },
             ),
           ),

@@ -38,7 +38,7 @@ class _NewsListviewWidgetState extends State<NewsListviewWidget> {
             itemCount: 5,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
-              return value.newsList.tracks! != null
+              return value.newsList.tracks != null
                   ? Container(
                       margin: EdgeInsets.only(top: 0.5.h, left: 3.w),
                       height: 42.h,
