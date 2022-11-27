@@ -3,12 +3,13 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:spotify_b2_project/providers/profile_provider.dart';
 
+import '../models/artics_albums_response.dart';
 import '../models/category_response.dart';
 import '../models/profile_public_playlist_response.dart';
 import '../models/profile_response.dart';
 import '../providers/category_provider.dart';
 
-//void main() async {
+
 Future<CategoriesModel> getCategoryService() async {
   CategoriesModel? data;
   CategoryProvider? categoryProvider;
@@ -16,7 +17,7 @@ Future<CategoriesModel> getCategoryService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQCgQUiHilAvfsGUytCEN90VkvvBgvMXHuAzZNLtupsH4Z78yy8i9ChKNgkeXhp1OmNkZm6gUxIqmCoW4Q6R2dahtgi6OnAWmjQ1RvcFpaEQinmVwDtR_2znUPRZOIkMTwpPF2np3-81voIBdHxezp-oqKiAgzhWvz5KteScSzL10zdi1m3X6CogoV1ug34rHgrlJbzjIK09JYgwkmSM0cGJq5RYLC5LYU8v0KF0pWA-6OEVufxoIpNMjjbweq8i1NRVZ37U3TRd35zEcXP2eKcweVEq0J49AaTLeLNS',
+        'Bearer BQDDJm36SNdvn0mJp3hXeVyQERvx4KJ9V7YXJBm39Bm6hq7CPCb0WSgKpjpSxzSz31bY1UlhnB1OeCPa1UZo_gfNyEl9-SC-v9OJbOlQaqRbxkmiTxpLl42ievBoHeG68rhbXJmdfmL0Umzb6lMfEJ_6NzMMwUij4gjZEAGsmYJf8cUQ8Yo2fsrFQWXODvSXuxNxzHWzmqm1DYfbGYbW8bgF5pFbqUwgqt9H88fUxY0YT_OKGy8yTpC4lnASrv2pfLqUfIjiSr1L_UoWh1OfwCW3OuugwU9DAZoaCddR',
   };
 
   /* var params = {
@@ -34,7 +35,7 @@ Future<CategoriesModel> getCategoryService() async {
   return data = CategoriesModel.fromJson(jsonDecode(res.body));
 }
 
-//void main() async {
+
 Future<ProfileModel> getProfileService() async {
   ProfileModel? data1;
   ProfileProvider? profileProvider;
@@ -43,7 +44,7 @@ Future<ProfileModel> getProfileService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQCgQUiHilAvfsGUytCEN90VkvvBgvMXHuAzZNLtupsH4Z78yy8i9ChKNgkeXhp1OmNkZm6gUxIqmCoW4Q6R2dahtgi6OnAWmjQ1RvcFpaEQinmVwDtR_2znUPRZOIkMTwpPF2np3-81voIBdHxezp-oqKiAgzhWvz5KteScSzL10zdi1m3X6CogoV1ug34rHgrlJbzjIK09JYgwkmSM0cGJq5RYLC5LYU8v0KF0pWA-6OEVufxoIpNMjjbweq8i1NRVZ37U3TRd35zEcXP2eKcweVEq0J49AaTLeLNS',
+        'Bearer BQDDJm36SNdvn0mJp3hXeVyQERvx4KJ9V7YXJBm39Bm6hq7CPCb0WSgKpjpSxzSz31bY1UlhnB1OeCPa1UZo_gfNyEl9-SC-v9OJbOlQaqRbxkmiTxpLl42ievBoHeG68rhbXJmdfmL0Umzb6lMfEJ_6NzMMwUij4gjZEAGsmYJf8cUQ8Yo2fsrFQWXODvSXuxNxzHWzmqm1DYfbGYbW8bgF5pFbqUwgqt9H88fUxY0YT_OKGy8yTpC4lnASrv2pfLqUfIjiSr1L_UoWh1OfwCW3OuugwU9DAZoaCddR',
   };
 
   var url = Uri.parse('https://api.spotify.com/v1/me');
@@ -55,14 +56,14 @@ Future<ProfileModel> getProfileService() async {
 
 // Public Playlist //
 
-//void main() async {
+
 Future<PublicPlaylistModel> getPublicPlaylistService() async {
   PublicPlaylistModel? data2;
   var headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQCgQUiHilAvfsGUytCEN90VkvvBgvMXHuAzZNLtupsH4Z78yy8i9ChKNgkeXhp1OmNkZm6gUxIqmCoW4Q6R2dahtgi6OnAWmjQ1RvcFpaEQinmVwDtR_2znUPRZOIkMTwpPF2np3-81voIBdHxezp-oqKiAgzhWvz5KteScSzL10zdi1m3X6CogoV1ug34rHgrlJbzjIK09JYgwkmSM0cGJq5RYLC5LYU8v0KF0pWA-6OEVufxoIpNMjjbweq8i1NRVZ37U3TRd35zEcXP2eKcweVEq0J49AaTLeLNS',
+        'Bearer BQDDJm36SNdvn0mJp3hXeVyQERvx4KJ9V7YXJBm39Bm6hq7CPCb0WSgKpjpSxzSz31bY1UlhnB1OeCPa1UZo_gfNyEl9-SC-v9OJbOlQaqRbxkmiTxpLl42ievBoHeG68rhbXJmdfmL0Umzb6lMfEJ_6NzMMwUij4gjZEAGsmYJf8cUQ8Yo2fsrFQWXODvSXuxNxzHWzmqm1DYfbGYbW8bgF5pFbqUwgqt9H88fUxY0YT_OKGy8yTpC4lnASrv2pfLqUfIjiSr1L_UoWh1OfwCW3OuugwU9DAZoaCddR',
   };
 
   /*  var params = {
@@ -77,3 +78,35 @@ Future<PublicPlaylistModel> getPublicPlaylistService() async {
   // print(res.body);
   return data2 = PublicPlaylistModel.fromJson(jsonDecode(res.body));
 }
+
+
+
+//    ArticsAlbulModel    //
+
+
+
+
+  Future<ArticsAlbumsModel> getAlbumsService() async {
+    ArticsAlbumsModel? data3;
+    var headers = {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'Authorization': 'BQDDJm36SNdvn0mJp3hXeVyQERvx4KJ9V7YXJBm39Bm6hq7CPCb0WSgKpjpSxzSz31bY1UlhnB1OeCPa1UZo_gfNyEl9-SC-v9OJbOlQaqRbxkmiTxpLl42ievBoHeG68rhbXJmdfmL0Umzb6lMfEJ_6NzMMwUij4gjZEAGsmYJf8cUQ8Yo2fsrFQWXODvSXuxNxzHWzmqm1DYfbGYbW8bgF5pFbqUwgqt9H88fUxY0YT_OKGy8yTpC4lnASrv2pfLqUfIjiSr1L_UoWh1OfwCW3OuugwU9DAZoaCddR',
+  };
+
+ /*  var params = {
+    'market': 'TR',
+  };
+  var query = params.entries.map((p) => '${p.key}=${p.value}').join('&'); */
+
+  var url = Uri.parse('https://api.spotify.com/v1/artists/6qqNVTkY8uBg9cP3Jd7DAH/top-tracks? ');
+   
+  var res = await http.get(url, headers: headers);
+ // if (res.statusCode != 200) throw Exception('http.get error: statusCode= ${res.statusCode}');
+ // print(res.body);
+ return data3 = ArticsAlbumsModel.fromJson(jsonDecode(res.body));
+  }
+  
+  
+
+

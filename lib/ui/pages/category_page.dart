@@ -39,7 +39,7 @@ class _CategoryPageState extends State<CategoryPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 6.h,
+                height: 3.h,
               ),
               Text(
                 "Ara",
@@ -56,18 +56,17 @@ class _CategoryPageState extends State<CategoryPage> {
                 height: 3.h,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Spacer(),
                   Text(
                     "Hepsine göz at",
                     style: GoogleFonts.inter(
                         fontSize: 22, color: Color(0xff222222)),
                   ),
-                  Spacer()
                 ],
               ),
               SizedBox(
-                height: 2.h,
+                height: 3.h,
               ),
               CategoryGridviewWidget(),
             ],

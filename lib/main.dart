@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:spotify_b2_project/providers/artics_provider.dart';
 import 'package:spotify_b2_project/providers/bottom_nav_provider.dart';
 import 'package:spotify_b2_project/providers/category_provider.dart';
 import 'package:spotify_b2_project/providers/profile_provider.dart';
@@ -22,7 +23,8 @@ void main() {
       ),
       ChangeNotifierProvider(
         create: (context) => BottomNavProvider(),
-      )
+      ),
+      ChangeNotifierProvider(create: (context) => ArticsProvider(),)
     ],
   ));
 }
