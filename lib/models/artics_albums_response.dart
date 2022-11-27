@@ -35,7 +35,7 @@ class Tracks {
   bool? isPlayable;
   String? name;
   int? popularity;
-  Null? previewUrl;
+  String? previewUrl;
   int? trackNumber;
   String? type;
   String? uri;

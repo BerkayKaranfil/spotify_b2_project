@@ -19,7 +19,7 @@ class _ArticsListviewWidgetState extends State<ArticsListviewWidget> {
   @override
   void initState() {
     super.initState();
-    data3 = Provider.of(context, listen: false);
+    data3 = Provider.of<ArticsProvider>(context, listen: false);
     data3!.getAlbumsPlaylist();
   }
 
@@ -33,7 +33,7 @@ class _ArticsListviewWidgetState extends State<ArticsListviewWidget> {
             height: 20.h,
             width: double.infinity,
             child: ListView.builder(
-              itemCount: 30,
+              itemCount: 5,
               //value.articsAlbumList.tracks![0].album!.images![0].url!.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
@@ -48,21 +48,21 @@ class _ArticsListviewWidgetState extends State<ArticsListviewWidget> {
                           width: 32.w,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              /* image: DecorationImage(
+                               image: DecorationImage(
                                   image: NetworkImage(
-                                    //  value.articsAlbumList.tracks![index].album!.images![0].url.toString()
+                                      value.articsAlbumList.tracks![index].album!.images![0].url.toString()
                                     //value.articsAlbumList.tracks![index].album.artists[0].
                                       )
-                                      )  */
+                                      )  
                                       ),
-                           child: Image.asset("assets/l1.png")
+                           //child: Image.asset("assets/l1.png")
                         ),
                         SizedBox(
                           height: 1.h,
                         ),
                         Text(
-                          "lilbubblegum",
-                       // value.articsAlbumList.tracks![index].artists![0].name.toString(),
+                         // "lilbubblegum",
+                        value.articsAlbumList.tracks![index].artists![0].name.toString(),
                       
                           style: GoogleFonts.inter(
                               fontSize: 13,
