@@ -5,6 +5,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../widgets/home_page_widgets/news_listview_widget.dart';
+
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
@@ -169,50 +171,7 @@ class _HomepageState extends State<Homepage> {
           SizedBox(
             height: 2.h,
           ),
-          Container(
-            height: 30.h,
-            width: 100.w,
-            child: ListView.builder(
-              itemCount: 5,
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) {
-                return Container(
-                  margin: EdgeInsets.only(top: 0.5.h, left: 3.w),
-                  height: 40.h,
-                  width: 38.w,
-                  child: Column(
-                    children: [
-                      Container(
-                        height: 24.h,
-                        child: Stack(
-                          children: [
-                            Image.asset("assets/singer.png"),
-                            Positioned(
-                                top: 20.h,
-                                left: 28.w,
-                                child: Image.asset("assets/miniplay.png"))
-                          ],
-                        ),
-                      ),
-                      Text(
-                        "Bad Guy",
-                        style: GoogleFonts.inter(
-                            fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 0.3.h,
-                      ),
-                      Text(
-                        "Billie Eilish",
-                        style: GoogleFonts.inter(
-                            fontSize: 14, fontWeight: FontWeight.w400),
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
-          ),
+          NewsListviewWidget(),
           SizedBox(
             height: 2.h,
           ),
@@ -314,3 +273,5 @@ class _HomepageState extends State<Homepage> {
     );
   }
 }
+
+
