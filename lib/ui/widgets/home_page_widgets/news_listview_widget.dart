@@ -16,7 +16,7 @@ class NewsListviewWidget extends StatefulWidget {
 
 class _NewsListviewWidgetState extends State<NewsListviewWidget> {
   NewsProvider? data4;
-   bool? newsListLoaded;
+  bool? newsListLoaded;
   @override
   void initState() {
     newsListLoaded = true;
@@ -32,7 +32,7 @@ class _NewsListviewWidgetState extends State<NewsListviewWidget> {
     return Consumer<NewsProvider>(
       builder: (context, value, Widget) {
         return Container(
-          height: 30.h,
+          height: 33.h,
           width: 100.w,
           child: ListView.builder(
             itemCount: 5,
@@ -46,49 +46,62 @@ class _NewsListviewWidgetState extends State<NewsListviewWidget> {
                       child: Column(
                         children: [
                           Container(
-                            height: 24.h,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(10),
-                                    bottomRight: Radius.circular(10),
-                                    topLeft: Radius.circular(10),
-                                    topRight: Radius.circular(10)),
-                                image: DecorationImage(
-                                    image: NetworkImage(value.newsList
-                                        .tracks![index].album!.images![0].url
-                                        .toString()),
-                                    fit: BoxFit.cover)),
+                            height: 26.h,
                             child: Stack(
                               children: [
-                                //Image.asset("assets/singer.png"),
+                                Container(
+                                  height: 24.h,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(10),
+                                          bottomRight: Radius.circular(10),
+                                          topLeft: Radius.circular(10),
+                                          topRight: Radius.circular(10)),
+                                      image: DecorationImage(
+                                          image: NetworkImage(value
+                                              .newsList
+                                              .tracks![index]
+                                              .album!
+                                              .images![0]
+                                              .url
+                                              .toString()),
+                                          fit: BoxFit.cover)),
+                                ),
                                 Positioned(
                                     top: 22.h,
                                     left: 30.w,
-                                    child: Image.asset("assets/miniplay.png"))
+                                    child: Image.asset("assets/miniplay.png")),
                               ],
                             ),
                           ),
-                          FittedBox(
-                            child: Text(
-                              //"Bad Guy",
+                          SizedBox(
+                            height: 0.5.h,
+                          ),
+                          Container(
+                            child: FittedBox(
+                              child: Text(
+                                //"Bad Guy",
 
-                              value.newsList.tracks![index].album!.name
-                                  .toString(),
+                                value.newsList.tracks![index].album!.name
+                                    .toString(),
 
-                              style: GoogleFonts.inter(
-                                  fontSize: 16, fontWeight: FontWeight.bold),
+                                style: GoogleFonts.inter(
+                                    fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                           SizedBox(
                             height: 0.3.h,
                           ),
-                          FittedBox(
-                            child: Text(
-                              // "Billie Eilish",
-                              value.newsList.tracks![index].artists![0].name
-                                  .toString(),
-                              style: GoogleFonts.inter(
-                                  fontSize: 14, fontWeight: FontWeight.w400),
+                          Container(
+                            child: FittedBox(
+                              child: Text(
+                                // "Billie Eilish",
+                                value.newsList.tracks![index].artists![0].name
+                                    .toString(),
+                                style: GoogleFonts.inter(
+                                    fontSize: 14, fontWeight: FontWeight.w400),
+                              ),
                             ),
                           ),
                         ],
@@ -98,7 +111,7 @@ class _NewsListviewWidgetState extends State<NewsListviewWidget> {
                       child: Container(
                         margin: EdgeInsets.only(top: 0.5.h, left: 3.w),
                         height: 42.h,
-                      width: 38.w,
+                        width: 38.w,
                       ),
                       baseColor: Colors.grey.withOpacity(0.5),
                       highlightColor: Colors.grey.withOpacity(0.7));

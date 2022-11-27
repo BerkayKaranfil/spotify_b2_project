@@ -98,7 +98,7 @@ class _HomepageState extends State<Homepage> {
           ),
           FadeInDown(child: NewsListviewWidget()),
           SizedBox(
-            height: 2.h,
+            height: 1.h,
           ),
           FadeInLeft(
             child: Padding(
