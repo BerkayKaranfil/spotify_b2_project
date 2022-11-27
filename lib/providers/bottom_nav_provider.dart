@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:spotify_b2_project/main.dart';
 import 'package:spotify_b2_project/ui/pages/artics_page.dart';
 import 'package:spotify_b2_project/ui/pages/category_page.dart';
-import 'package:spotify_b2_project/ui/pages/home_page.dart';
+import 'package:spotify_b2_project/ui/pages/home_pagee.dart';
 import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 
 class BottomNavProvider extends ChangeNotifier {

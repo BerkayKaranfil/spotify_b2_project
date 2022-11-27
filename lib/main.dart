@@ -8,7 +8,7 @@ import 'package:spotify_b2_project/providers/news_provider.dart';
 import 'package:spotify_b2_project/providers/profile_provider.dart';
 import 'package:spotify_b2_project/ui/pages/artics_page.dart';
 import 'package:spotify_b2_project/ui/pages/category_page.dart';
-import 'package:spotify_b2_project/ui/pages/home_page.dart';
+import 'package:spotify_b2_project/ui/pages/home_pagee.dart';
 import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 import 'package:spotify_b2_project/ui/widgets/bottom_bar_widget.dart';
 

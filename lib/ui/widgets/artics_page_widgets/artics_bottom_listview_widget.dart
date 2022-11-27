@@ -52,6 +52,16 @@ class ArticsBottomListviewWidget extends StatelessWidget {
                               color: Color(0xff000000)),
                         )
                       ],
+                    ),
+                    SizedBox(
+                      width: 5.w,
+                    ),
+                    Align(
+                      alignment: Alignment.topCenter,
+                      child: Text("5:33",style: GoogleFonts.inter(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                          color: Color(0xff000000)),),
                     )
                   ],
                 ),

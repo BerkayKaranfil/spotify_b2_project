@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -6,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:spotify_b2_project/ui/pages/artics_page.dart';
 import 'package:spotify_b2_project/ui/pages/category_page.dart';
-import 'package:spotify_b2_project/ui/pages/home_page.dart';
+import 'package:spotify_b2_project/ui/pages/home_pagee.dart';
 import 'package:spotify_b2_project/ui/widgets/bottom_bar_widget.dart';
 
 import '../widgets/profile_page_widgets/profile_chart_widget.dart';
@@ -33,24 +34,26 @@ class _ProfilePageState extends State<ProfilePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ProfileChartWidget(),
+          FadeInDown(child: ProfileChartWidget()),
           SizedBox(
             height: 3.h,
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: Text(
-              "PUBLIC PLAYLIST",
-              style: GoogleFonts.inter(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xff222222)),
+          FadeInLeft(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: Text(
+                "PUBLIC PLAYLIST",
+                style: GoogleFonts.inter(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff222222)),
+              ),
             ),
           ),
           SizedBox(
             height: 1.h,
           ),
-          ProfilePageListViewWidget(),
+          FadeInDown(child: ProfilePageListViewWidget()),
         ],
       ),
     );

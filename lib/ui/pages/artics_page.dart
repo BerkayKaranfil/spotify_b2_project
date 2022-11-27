@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -12,7 +13,7 @@ import '../widgets/artics_page_widgets/artics_page_widget.dart';
 import '../widgets/artics_page_widgets/artics_top_image_widget.dart';
 import '../widgets/artics_page_widgets/artist_info_widget.dart';
 import '../widgets/bottom_bar_widget.dart';
-import 'home_page.dart';
+import 'home_pagee.dart';
 
 class ArticsPage extends StatefulWidget {
   const ArticsPage({super.key});
@@ -22,11 +23,9 @@ class ArticsPage extends StatefulWidget {
 }
 
 class _ArticsPageState extends State<ArticsPage> {
-  // int activepage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Color.fromARGB(255, 31, 30, 30),
       backgroundColor: Color(0xffFAFAFA),
       appBar: AppBar(
         toolbarHeight: 0,
@@ -35,59 +34,63 @@ class _ArticsPageState extends State<ArticsPage> {
       ),
       body: Column(
         children: [
-          ArticsTopImageWidget(),
+          FadeInDown(child: ArticsTopImageWidget()),
           SizedBox(
             height: 2.h,
           ),
-          ArtistInfoWidget(),
+          FadeInDown(child: ArtistInfoWidget()),
           SizedBox(
             height: 1.h,
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15),
-            child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  "Albums",
-                  style: GoogleFonts.inter(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xff222222)),
-                )),
+          FadeInLeft(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 15),
+              child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Albums",
+                    style: GoogleFonts.inter(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff222222)),
+                  )),
+            ),
           ),
-          ArticsListviewWidget(),
+          FadeInDown(child: ArticsListviewWidget()),
           SizedBox(
             height: 1.h,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Songs",
-                  style: GoogleFonts.inter(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xff222222)),
-                ),
-                Container(
-                    child: TextButton(
-                        onPressed: () {},
-                        style: TextButton.styleFrom(
-                            textStyle: GoogleFonts.inter(
-                                fontSize: 12, fontWeight: FontWeight.w400),
-                            foregroundColor: Color(0xff131313)),
-                        child: Text(
-                          "See More",
-                        ))),
-              ],
+          FadeInLeft(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Songs",
+                    style: GoogleFonts.inter(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff222222)),
+                  ),
+                  Container(
+                      child: TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                              textStyle: GoogleFonts.inter(
+                                  fontSize: 12, fontWeight: FontWeight.w400),
+                              foregroundColor: Color(0xff131313)),
+                          child: Text(
+                            "See More",
+                          ))),
+                ],
+              ),
             ),
           ),
           SizedBox(
             height: 1.h,
           ),
-          ArticsBottomListviewWidget(),
+          FadeInDown(child: ArticsBottomListviewWidget()),
         ],
       ),
     );

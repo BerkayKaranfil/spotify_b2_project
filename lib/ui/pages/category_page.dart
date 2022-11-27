@@ -1,9 +1,10 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:spotify_b2_project/ui/pages/home_page.dart';
+import 'package:spotify_b2_project/ui/pages/home_pagee.dart';
 import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 import 'package:spotify_b2_project/ui/widgets/bottom_bar_widget.dart';
 
@@ -19,13 +20,10 @@ class CategoryPage extends StatefulWidget {
 }
 
 class _CategoryPageState extends State<CategoryPage> {
-  // int activepage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-
-      // backgroundColor: Color.fromARGB(255, 31, 30, 30),
       backgroundColor: Color(0xffFAFAFA),
       appBar: AppBar(
         toolbarHeight: 0,
@@ -41,34 +39,38 @@ class _CategoryPageState extends State<CategoryPage> {
               SizedBox(
                 height: 3.h,
               ),
-              Text(
-                "Ara",
-                style: GoogleFonts.inter(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xff222222)),
+              FadeInLeft(
+                child: Text(
+                  "Ara",
+                  style: GoogleFonts.inter(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff222222)),
+                ),
               ),
               SizedBox(
                 height: 4.h,
               ),
-              CustomTextFormFieldWidget(),
+              FadeInDown(child: CustomTextFormFieldWidget()),
               SizedBox(
                 height: 3.h,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Hepsine göz at",
-                    style: GoogleFonts.inter(
-                        fontSize: 22, color: Color(0xff222222)),
-                  ),
-                ],
+              FadeInLeft(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Hepsine göz at",
+                      style: GoogleFonts.inter(
+                          fontSize: 22, color: Color(0xff222222)),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 3.h,
               ),
-              CategoryGridviewWidget(),
+              FadeInDown(child: CategoryGridviewWidget()),
             ],
           ),
         ),
