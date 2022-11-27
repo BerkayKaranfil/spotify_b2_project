@@ -20,7 +20,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
- // int activepage = 0;
+  // int activepage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,102 +51,8 @@ class _ProfilePageState extends State<ProfilePage> {
             height: 1.h,
           ),
           ProfilePageListViewWidget(),
-           /* Padding(
-              padding: EdgeInsets.only(right: 1.5.h, left: 1.5.h),
-              child: Container(
-                height: 49,
-                width: 400,
-                //color: Colors.black.withOpacity(0.2),
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          activepage = 0;
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => CategoryPage(),
-                              ));
-                        });
-                      },
-                      child: Container(
-                        height: 45,
-                        width: 45,
-                        child: Icon(Icons.home,
-                            color:
-                                activepage == 0 ? Colors.green : Colors.black),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 13.w,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          activepage = 1;
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => ArticsPage(),
-                              ));
-                        });
-                      },
-                      child: Container(
-                        height: 45,
-                        width: 45,
-                        child: Icon(Icons.search,
-                            color:
-                                activepage == 1 ? Colors.green : Colors.black),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 13.w,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          activepage = 2;
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage(),));
-                        });
-                      },
-                      child: Container(
-                        height: 45,
-                        width: 45,
-                        child: Icon(Icons.book_rounded,
-                            color:
-                                activepage == 2 ? Colors.green : Colors.black),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 13.w,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          activepage = 3;
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => Homepage(),));
-                        });
-                      },
-                      child: Container(
-                        height: 45,
-                        width: 45,
-                        child: Icon(Icons.circle,
-                            color:
-                                activepage == 3 ? Colors.green : Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            )  */ 
         ],
       ),
-    
     );
   }
 }
-
-
-
-

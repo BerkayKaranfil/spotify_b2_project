@@ -51,34 +51,35 @@ class _CategoryGridviewWidgetState extends State<CategoryGridviewWidget> {
                       height: 5.h,
                       width: 10.h,
                       decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8),
-                        image: DecorationImage(image: NetworkImage(value.categoriesList.categories!.items![index].icons![0].url.toString()), fit: BoxFit.fitWidth)
-                      ),
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8),
+                          image: DecorationImage(
+                              image: NetworkImage(value.categoriesList
+                                  .categories!.items![index].icons![0].url
+                                  .toString()),
+                              fit: BoxFit.fitWidth)),
                       child: Padding(
                         padding: const EdgeInsets.all(15),
                         child: Align(
                           alignment: Alignment.bottomLeft,
                           child: Text(
-                           // "Podcast'ler",
-                            value.categoriesList.categories!.items![index].name.toString(),
+                            // "Podcast'ler",
+                            value.categoriesList.categories!.items![index].name
+                                .toString(),
                             style: GoogleFonts.inter(
                                 fontSize: 15, color: Colors.white),
                           ),
                         ),
                       ),
                     )
-                  : SizedBox(
-                      height: 65.h,
-                      child: Shimmer.fromColors(
-                          child: Container(
-                            height: 5.h,
-                            width: 10.h,
-                            color: Colors.blue,
-                          ),
-                          baseColor: Colors.grey.withOpacity(0.5),
-                          highlightColor: Colors.grey.withOpacity(0.7)),
-                    );
+                  : Shimmer.fromColors(
+                      child: Container(
+                        height: 5.h,
+                        width: 10.h,
+                        color: Colors.blue,
+                      ),
+                      baseColor: Colors.grey.withOpacity(0.5),
+                      highlightColor: Colors.grey.withOpacity(0.7));
             },
           ),
         );
