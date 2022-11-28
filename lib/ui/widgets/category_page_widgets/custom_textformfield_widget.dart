@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:spotify_b2_project/ui/pages/search_page.dart';
 
 class CustomTextFormFieldWidget extends StatelessWidget {
   const CustomTextFormFieldWidget({
@@ -14,6 +15,9 @@ class CustomTextFormFieldWidget extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(8)),
       child: TextFormField(
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage(),));
+        },
           style: GoogleFonts.inter(color: Color(0xff222222)),
           cursorColor: Colors.white,
           decoration: InputDecoration(

@@ -4,7 +4,7 @@ import 'package:spotify_b2_project/services/search_api_services.dart';
 
 class SearchProvider extends ChangeNotifier{
   SearchModels searchList = SearchModels();
-  String query = "Berkay";
+  String query = "Berkay Karanfil";
 
   getSearchData()async{
     searchList = (await getSearchDataService(query))!;

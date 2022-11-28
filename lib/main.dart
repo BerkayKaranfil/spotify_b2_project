@@ -6,6 +6,7 @@ import 'package:spotify_b2_project/providers/bottom_nav_provider.dart';
 import 'package:spotify_b2_project/providers/category_provider.dart';
 import 'package:spotify_b2_project/providers/news_provider.dart';
 import 'package:spotify_b2_project/providers/profile_provider.dart';
+import 'package:spotify_b2_project/providers/search_provider.dart';
 import 'package:spotify_b2_project/ui/pages/artics_page.dart';
 import 'package:spotify_b2_project/ui/pages/category_page.dart';
 import 'package:spotify_b2_project/ui/pages/home_pagee.dart';
@@ -25,8 +26,15 @@ void main() {
       ChangeNotifierProvider(
         create: (context) => BottomNavProvider(),
       ),
-      ChangeNotifierProvider(create: (context) => ArticsProvider(),),
-      ChangeNotifierProvider(create: (context) => NewsProvider(),)
+      ChangeNotifierProvider(
+        create: (context) => ArticsProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => NewsProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => SearchProvider(),
+      )
     ],
   ));
 }
@@ -44,7 +52,6 @@ class _MyAppState extends State<MyApp> {
     return ResponsiveSizer(
       builder: (context, orientation, screenType) {
         return MaterialApp(
-          
           debugShowCheckedModeBanner: false,
           title: '',
           theme: ThemeData(
