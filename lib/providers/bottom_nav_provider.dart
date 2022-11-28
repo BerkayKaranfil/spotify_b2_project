@@ -16,11 +16,11 @@ class BottomNavProvider extends ChangeNotifier {
   pageChange() {
     switch (selectedIndex) {
       case 0:
-        return const CategoryPage();
-      case 1:
-        return const ArticsPage();
-      case 2:
         return const Homepage();
+      case 1:
+        return const CategoryPage();
+      case 2:
+        return const ArticsPage();
       case 3:
         return const ProfilePage();
     }
