@@ -18,7 +18,7 @@ Future<CategoriesModel> getCategoryService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDCL1OUIHf1j3uWea3Bp0bZpkSyeu9bSo54LlT7meIKZkAHd7wVicTjV7e9886OkNHq6GjbhCGGmGCDaGsRdnbIB6m3Vbl9NaLOs5vdYRWLpSgYeLx7LmRiZgCdM8gtMRBA_qJwy4Ag-DB2BfH42armxdbvQbZlHPpsKtoZoTdu8S0oUvPQ3z8cEtPxNBAFx8pRyKnPyE6avvFQ4keGb8RY8grFvCVgoK8mtOv1PTeBwGOyResTlxIVHiohWQSviESvzpZNM3g5OWgcXI1w9idyqc1xfxPKCvvAOr4S',
+        'Bearer BQBK4EM6AjXkOhW6wDRSVMgxwzkJmi3_57FuK9EMutQmDVYHeVbPDLf_gxR4m26yxiPefEFtdBUXMk4kHfD2x83rHY6kYPbkWJwmhW4DTcfDYsu8kQJKNG3DHQeyiwSVspbEw4msWvZgBRe70b_u1Ont1Ow0HtIVBhRTLy65Br2eY9icE3ujVpVfiMc9RJEtuxUKWQrrDVomL8EM-1MMBnWKRf5ClsVxB9vaqPOdbuzcG8eHyhQSqN3c6fZrUske_EqTpMJWFmBdvaNABWBVwrKF-JwdL2-rSTw_aqZD',
   };
 
   /* var params = {
@@ -44,7 +44,7 @@ Future<ProfileModel> getProfileService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDCL1OUIHf1j3uWea3Bp0bZpkSyeu9bSo54LlT7meIKZkAHd7wVicTjV7e9886OkNHq6GjbhCGGmGCDaGsRdnbIB6m3Vbl9NaLOs5vdYRWLpSgYeLx7LmRiZgCdM8gtMRBA_qJwy4Ag-DB2BfH42armxdbvQbZlHPpsKtoZoTdu8S0oUvPQ3z8cEtPxNBAFx8pRyKnPyE6avvFQ4keGb8RY8grFvCVgoK8mtOv1PTeBwGOyResTlxIVHiohWQSviESvzpZNM3g5OWgcXI1w9idyqc1xfxPKCvvAOr4S',
+        'Bearer BQBK4EM6AjXkOhW6wDRSVMgxwzkJmi3_57FuK9EMutQmDVYHeVbPDLf_gxR4m26yxiPefEFtdBUXMk4kHfD2x83rHY6kYPbkWJwmhW4DTcfDYsu8kQJKNG3DHQeyiwSVspbEw4msWvZgBRe70b_u1Ont1Ow0HtIVBhRTLy65Br2eY9icE3ujVpVfiMc9RJEtuxUKWQrrDVomL8EM-1MMBnWKRf5ClsVxB9vaqPOdbuzcG8eHyhQSqN3c6fZrUske_EqTpMJWFmBdvaNABWBVwrKF-JwdL2-rSTw_aqZD',
   };
 
   var url = Uri.parse('https://api.spotify.com/v1/me');
@@ -62,7 +62,7 @@ Future<PublicPlaylistModel> getPublicPlaylistService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDCL1OUIHf1j3uWea3Bp0bZpkSyeu9bSo54LlT7meIKZkAHd7wVicTjV7e9886OkNHq6GjbhCGGmGCDaGsRdnbIB6m3Vbl9NaLOs5vdYRWLpSgYeLx7LmRiZgCdM8gtMRBA_qJwy4Ag-DB2BfH42armxdbvQbZlHPpsKtoZoTdu8S0oUvPQ3z8cEtPxNBAFx8pRyKnPyE6avvFQ4keGb8RY8grFvCVgoK8mtOv1PTeBwGOyResTlxIVHiohWQSviESvzpZNM3g5OWgcXI1w9idyqc1xfxPKCvvAOr4S',
+        'Bearer BQBK4EM6AjXkOhW6wDRSVMgxwzkJmi3_57FuK9EMutQmDVYHeVbPDLf_gxR4m26yxiPefEFtdBUXMk4kHfD2x83rHY6kYPbkWJwmhW4DTcfDYsu8kQJKNG3DHQeyiwSVspbEw4msWvZgBRe70b_u1Ont1Ow0HtIVBhRTLy65Br2eY9icE3ujVpVfiMc9RJEtuxUKWQrrDVomL8EM-1MMBnWKRf5ClsVxB9vaqPOdbuzcG8eHyhQSqN3c6fZrUske_EqTpMJWFmBdvaNABWBVwrKF-JwdL2-rSTw_aqZD',
   };
 
   /*  var params = {
@@ -86,7 +86,7 @@ Future<ArticsAlbumsModel> getAlbumsService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDCL1OUIHf1j3uWea3Bp0bZpkSyeu9bSo54LlT7meIKZkAHd7wVicTjV7e9886OkNHq6GjbhCGGmGCDaGsRdnbIB6m3Vbl9NaLOs5vdYRWLpSgYeLx7LmRiZgCdM8gtMRBA_qJwy4Ag-DB2BfH42armxdbvQbZlHPpsKtoZoTdu8S0oUvPQ3z8cEtPxNBAFx8pRyKnPyE6avvFQ4keGb8RY8grFvCVgoK8mtOv1PTeBwGOyResTlxIVHiohWQSviESvzpZNM3g5OWgcXI1w9idyqc1xfxPKCvvAOr4S',
+        'Bearer BQBK4EM6AjXkOhW6wDRSVMgxwzkJmi3_57FuK9EMutQmDVYHeVbPDLf_gxR4m26yxiPefEFtdBUXMk4kHfD2x83rHY6kYPbkWJwmhW4DTcfDYsu8kQJKNG3DHQeyiwSVspbEw4msWvZgBRe70b_u1Ont1Ow0HtIVBhRTLy65Br2eY9icE3ujVpVfiMc9RJEtuxUKWQrrDVomL8EM-1MMBnWKRf5ClsVxB9vaqPOdbuzcG8eHyhQSqN3c6fZrUske_EqTpMJWFmBdvaNABWBVwrKF-JwdL2-rSTw_aqZD',
   };
 
   var params = {
@@ -109,7 +109,7 @@ Future<NewsModel> getNewsService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDCL1OUIHf1j3uWea3Bp0bZpkSyeu9bSo54LlT7meIKZkAHd7wVicTjV7e9886OkNHq6GjbhCGGmGCDaGsRdnbIB6m3Vbl9NaLOs5vdYRWLpSgYeLx7LmRiZgCdM8gtMRBA_qJwy4Ag-DB2BfH42armxdbvQbZlHPpsKtoZoTdu8S0oUvPQ3z8cEtPxNBAFx8pRyKnPyE6avvFQ4keGb8RY8grFvCVgoK8mtOv1PTeBwGOyResTlxIVHiohWQSviESvzpZNM3g5OWgcXI1w9idyqc1xfxPKCvvAOr4S',
+        'Bearer BQBK4EM6AjXkOhW6wDRSVMgxwzkJmi3_57FuK9EMutQmDVYHeVbPDLf_gxR4m26yxiPefEFtdBUXMk4kHfD2x83rHY6kYPbkWJwmhW4DTcfDYsu8kQJKNG3DHQeyiwSVspbEw4msWvZgBRe70b_u1Ont1Ow0HtIVBhRTLy65Br2eY9icE3ujVpVfiMc9RJEtuxUKWQrrDVomL8EM-1MMBnWKRf5ClsVxB9vaqPOdbuzcG8eHyhQSqN3c6fZrUske_EqTpMJWFmBdvaNABWBVwrKF-JwdL2-rSTw_aqZD',
   };
 
   var params = {
@@ -125,5 +125,5 @@ Future<NewsModel> getNewsService() async {
 }
 
 
-//    SearchModel    //
+
  
