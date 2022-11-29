@@ -18,7 +18,7 @@ Future<CategoriesModel> getCategoryService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDgG0hYMZuHjlPj6f0Tgf6LpdK-B2IzjGhCd4S51tzOLzI88fekOMK28Xw5aYnu97_6Mm717Njq_p3_1nZ3WUmxk_FPK_-Iu_EgwMcAXqDM4iKf-DBIdzfACG-3_oqLrjvp45Wqpz1Mix2UfH_i2GyV5JilSGmMehLlgSGh4wXgPNMrlWSXfYlA2AFuccr-sDDX-H7emhnHV1X8PU9MmpgI9seUzgNlvVtIsSagOjoDOVRZLERxIZ_w-Ok3xKLCdCnGkm_dRtGIaOCBnpqg5xlwxh_XOKGvdkhCpSUa',
+        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
   };
 
   /* var params = {
@@ -44,7 +44,7 @@ Future<ProfileModel> getProfileService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDgG0hYMZuHjlPj6f0Tgf6LpdK-B2IzjGhCd4S51tzOLzI88fekOMK28Xw5aYnu97_6Mm717Njq_p3_1nZ3WUmxk_FPK_-Iu_EgwMcAXqDM4iKf-DBIdzfACG-3_oqLrjvp45Wqpz1Mix2UfH_i2GyV5JilSGmMehLlgSGh4wXgPNMrlWSXfYlA2AFuccr-sDDX-H7emhnHV1X8PU9MmpgI9seUzgNlvVtIsSagOjoDOVRZLERxIZ_w-Ok3xKLCdCnGkm_dRtGIaOCBnpqg5xlwxh_XOKGvdkhCpSUa',
+        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
   };
 
   var url = Uri.parse('https://api.spotify.com/v1/me');
@@ -62,7 +62,7 @@ Future<PublicPlaylistModel> getPublicPlaylistService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDgG0hYMZuHjlPj6f0Tgf6LpdK-B2IzjGhCd4S51tzOLzI88fekOMK28Xw5aYnu97_6Mm717Njq_p3_1nZ3WUmxk_FPK_-Iu_EgwMcAXqDM4iKf-DBIdzfACG-3_oqLrjvp45Wqpz1Mix2UfH_i2GyV5JilSGmMehLlgSGh4wXgPNMrlWSXfYlA2AFuccr-sDDX-H7emhnHV1X8PU9MmpgI9seUzgNlvVtIsSagOjoDOVRZLERxIZ_w-Ok3xKLCdCnGkm_dRtGIaOCBnpqg5xlwxh_XOKGvdkhCpSUa',
+        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
   };
 
   /*  var params = {
@@ -86,7 +86,7 @@ Future<ArticsAlbumsModel> getAlbumsService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDgG0hYMZuHjlPj6f0Tgf6LpdK-B2IzjGhCd4S51tzOLzI88fekOMK28Xw5aYnu97_6Mm717Njq_p3_1nZ3WUmxk_FPK_-Iu_EgwMcAXqDM4iKf-DBIdzfACG-3_oqLrjvp45Wqpz1Mix2UfH_i2GyV5JilSGmMehLlgSGh4wXgPNMrlWSXfYlA2AFuccr-sDDX-H7emhnHV1X8PU9MmpgI9seUzgNlvVtIsSagOjoDOVRZLERxIZ_w-Ok3xKLCdCnGkm_dRtGIaOCBnpqg5xlwxh_XOKGvdkhCpSUa',
+        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
   };
 
   var params = {
@@ -109,7 +109,7 @@ Future<NewsModel> getNewsService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQDgG0hYMZuHjlPj6f0Tgf6LpdK-B2IzjGhCd4S51tzOLzI88fekOMK28Xw5aYnu97_6Mm717Njq_p3_1nZ3WUmxk_FPK_-Iu_EgwMcAXqDM4iKf-DBIdzfACG-3_oqLrjvp45Wqpz1Mix2UfH_i2GyV5JilSGmMehLlgSGh4wXgPNMrlWSXfYlA2AFuccr-sDDX-H7emhnHV1X8PU9MmpgI9seUzgNlvVtIsSagOjoDOVRZLERxIZ_w-Ok3xKLCdCnGkm_dRtGIaOCBnpqg5xlwxh_XOKGvdkhCpSUa',
+        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
   };
 
   var params = {
@@ -123,6 +123,11 @@ Future<NewsModel> getNewsService() async {
 
   return data4 = NewsModel.fromJson(jsonDecode(res.body));
 }
+
+
+
+
+
 
 
 
