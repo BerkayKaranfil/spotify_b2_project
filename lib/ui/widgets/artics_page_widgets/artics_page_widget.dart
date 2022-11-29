@@ -16,18 +16,7 @@ class ArticsListviewWidget extends StatefulWidget {
 }
 
 class _ArticsListviewWidgetState extends State<ArticsListviewWidget> {
-  ArticsProvider? data3;
-  bool? categoryListLoaded;
-
-  @override
-  void initState() {
-    categoryListLoaded = true;
-    Future.delayed(Duration(seconds: 2));
-    categoryListLoaded = false;
-    super.initState();
-    data3 = Provider.of<ArticsProvider>(context, listen: false);
-    data3!.getAlbumsPlaylist();
-  }
+  
 
   @override
   Widget build(BuildContext context) {

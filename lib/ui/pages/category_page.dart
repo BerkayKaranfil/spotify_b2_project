@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:spotify_b2_project/ui/pages/home_pagee.dart';
 import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 import 'package:spotify_b2_project/ui/widgets/bottom_bar_widget.dart';
 
+import '../../providers/category_provider.dart';
 import '../widgets/category_page_widgets/category_gridview_widget.dart';
 import '../widgets/category_page_widgets/custom_textformfield_widget.dart';
 import 'artics_page.dart';
@@ -20,6 +22,18 @@ class CategoryPage extends StatefulWidget {
 }
 
 class _CategoryPageState extends State<CategoryPage> {
+  CategoryProvider? data;
+  bool? categoryListLoaded;
+
+  @override
+  void initState() {
+    categoryListLoaded = true;
+    Future.delayed(Duration(seconds: 2));
+    categoryListLoaded = false;
+    super.initState();
+    data = Provider.of<CategoryProvider>(context, listen: false);
+    data!.getCategory();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

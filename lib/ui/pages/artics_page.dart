@@ -4,10 +4,12 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:spotify_b2_project/ui/pages/category_page.dart';
 import 'package:spotify_b2_project/ui/pages/profile_page.dart';
 
+import '../../providers/artics_provider.dart';
 import '../widgets/artics_page_widgets/artics_bottom_listview_widget.dart';
 import '../widgets/artics_page_widgets/artics_page_widget.dart';
 import '../widgets/artics_page_widgets/artics_top_image_widget.dart';
@@ -23,6 +25,18 @@ class ArticsPage extends StatefulWidget {
 }
 
 class _ArticsPageState extends State<ArticsPage> {
+  ArticsProvider? data3;
+  bool? categoryListLoaded;
+
+  @override
+  void initState() {
+    categoryListLoaded = true;
+    Future.delayed(Duration(seconds: 2));
+    categoryListLoaded = false;
+    super.initState();
+    data3 = Provider.of<ArticsProvider>(context, listen: false);
+    data3!.getAlbumsPlaylist();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

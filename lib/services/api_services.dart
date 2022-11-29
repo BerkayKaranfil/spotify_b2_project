@@ -18,7 +18,7 @@ Future<CategoriesModel> getCategoryService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
+        'Bearer BQC0MJQ-bZO2ecgT6Kavu6yNdBgsCx_ZwoW7ayxDHox31VmwvA_nL2EnJDhsRDz_wWvLcIJ7QauCsisudxJlYdBJSx1X80vwjn3WmQRH1qTmQI2bhNFPFYvhaBtSNy1dcoSOuRauNYgIseFivJThlH9LVrZl3x_HJGL-pF-0XjpjiN7hQvr3pX0rQLK648MXWSmC1jCFl0FHn5Nc2neRgVKafn_jvT73WxdMm0ED2KBSuD7XqaqDVZFuwqoUi39Sf6SZGFuvLSBa0PqPpQ2yfzQYK39e1bvjBQfcG1oQ',
   };
 
   /* var params = {
@@ -44,7 +44,7 @@ Future<ProfileModel> getProfileService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
+        'Bearer BQC0MJQ-bZO2ecgT6Kavu6yNdBgsCx_ZwoW7ayxDHox31VmwvA_nL2EnJDhsRDz_wWvLcIJ7QauCsisudxJlYdBJSx1X80vwjn3WmQRH1qTmQI2bhNFPFYvhaBtSNy1dcoSOuRauNYgIseFivJThlH9LVrZl3x_HJGL-pF-0XjpjiN7hQvr3pX0rQLK648MXWSmC1jCFl0FHn5Nc2neRgVKafn_jvT73WxdMm0ED2KBSuD7XqaqDVZFuwqoUi39Sf6SZGFuvLSBa0PqPpQ2yfzQYK39e1bvjBQfcG1oQ',
   };
 
   var url = Uri.parse('https://api.spotify.com/v1/me');
@@ -62,7 +62,7 @@ Future<PublicPlaylistModel> getPublicPlaylistService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
+        'Bearer BQC0MJQ-bZO2ecgT6Kavu6yNdBgsCx_ZwoW7ayxDHox31VmwvA_nL2EnJDhsRDz_wWvLcIJ7QauCsisudxJlYdBJSx1X80vwjn3WmQRH1qTmQI2bhNFPFYvhaBtSNy1dcoSOuRauNYgIseFivJThlH9LVrZl3x_HJGL-pF-0XjpjiN7hQvr3pX0rQLK648MXWSmC1jCFl0FHn5Nc2neRgVKafn_jvT73WxdMm0ED2KBSuD7XqaqDVZFuwqoUi39Sf6SZGFuvLSBa0PqPpQ2yfzQYK39e1bvjBQfcG1oQ',
   };
 
   /*  var params = {
@@ -86,7 +86,7 @@ Future<ArticsAlbumsModel> getAlbumsService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
+        'Bearer BQC0MJQ-bZO2ecgT6Kavu6yNdBgsCx_ZwoW7ayxDHox31VmwvA_nL2EnJDhsRDz_wWvLcIJ7QauCsisudxJlYdBJSx1X80vwjn3WmQRH1qTmQI2bhNFPFYvhaBtSNy1dcoSOuRauNYgIseFivJThlH9LVrZl3x_HJGL-pF-0XjpjiN7hQvr3pX0rQLK648MXWSmC1jCFl0FHn5Nc2neRgVKafn_jvT73WxdMm0ED2KBSuD7XqaqDVZFuwqoUi39Sf6SZGFuvLSBa0PqPpQ2yfzQYK39e1bvjBQfcG1oQ',
   };
 
   var params = {
@@ -109,7 +109,7 @@ Future<NewsModel> getNewsService() async {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Authorization':
-        'Bearer BQC2IOgSXuMlsa4D3HDPAivSSQmoUqVxyP0FmWz8kY4EDKqtS9SG6fbOBqbXUrvenKlw4tfeB66zRm3K0DaiuXFP4l_xMp9ZanlxrGOXv6H7XcDi6RGGi8JzWVWss_TB1TBA28aobSBQ-boCTBYMvEVGn2jjW2CTc6D67a622dHuk_NmoRGTjd6wHxKKi60rup1XlBDzebbogdEYruliFv_dt4oLY-dX5iLWF3wLR2pt5d2-6lBrRZpUBnRVUbK4I4sma51lpVeReapRyWmZAZaEdmzS7IOpocwBeRHr',
+        'Bearer BQC0MJQ-bZO2ecgT6Kavu6yNdBgsCx_ZwoW7ayxDHox31VmwvA_nL2EnJDhsRDz_wWvLcIJ7QauCsisudxJlYdBJSx1X80vwjn3WmQRH1qTmQI2bhNFPFYvhaBtSNy1dcoSOuRauNYgIseFivJThlH9LVrZl3x_HJGL-pF-0XjpjiN7hQvr3pX0rQLK648MXWSmC1jCFl0FHn5Nc2neRgVKafn_jvT73WxdMm0ED2KBSuD7XqaqDVZFuwqoUi39Sf6SZGFuvLSBa0PqPpQ2yfzQYK39e1bvjBQfcG1oQ',
   };
 
   var params = {

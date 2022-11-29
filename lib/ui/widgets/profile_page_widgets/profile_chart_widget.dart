@@ -16,19 +16,7 @@ class ProfileChartWidget extends StatefulWidget {
 }
 
 class _ProfileChartWidgetState extends State<ProfileChartWidget> {
-  ProfileProvider? data1;
-
-  bool? profileListLoaded;
-
-  @override
-  void initState() {
-    profileListLoaded = true;
-    Future.delayed(Duration(seconds: 2));
-    profileListLoaded = false;
-    super.initState();
-    data1 = Provider.of<ProfileProvider>(context, listen: false);
-    data1!.getProfile();
-  }
+  
 
   @override
   Widget build(BuildContext context) {

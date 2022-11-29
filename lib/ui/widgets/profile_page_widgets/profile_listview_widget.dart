@@ -17,13 +17,7 @@ class ProfilePageListViewWidget extends StatefulWidget {
 }
 
 class _ProfilePageListViewWidgetState extends State<ProfilePageListViewWidget> {
-  ProfileProvider? data2;
-  @override
-  void initState() {
-    super.initState();
-    data2 = Provider.of<ProfileProvider>(context, listen: false);
-    data2!.getPublicPlaylist();
-  }
+  
 
   @override
   Widget build(BuildContext context) {

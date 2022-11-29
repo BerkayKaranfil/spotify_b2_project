@@ -18,18 +18,7 @@ class CategoryGridviewWidget extends StatefulWidget {
 }
 
 class _CategoryGridviewWidgetState extends State<CategoryGridviewWidget> {
-  CategoryProvider? data;
-  bool? categoryListLoaded;
-
-  @override
-  void initState() {
-    categoryListLoaded = true;
-    Future.delayed(Duration(seconds: 2));
-    categoryListLoaded = false;
-    super.initState();
-    data = Provider.of<CategoryProvider>(context, listen: false);
-    data!.getCategory();
-  }
+  
 
   @override
   Widget build(BuildContext context) {
