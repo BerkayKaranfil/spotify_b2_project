@@ -10,7 +10,7 @@ Future<AlbumModel> getSingerAlbumService() async {
   var headers = {
     'Accept': 'application/json',
     'Content-Type': 'application/json',
-    'Authorization': 'BQC0MJQ-bZO2ecgT6Kavu6yNdBgsCx_ZwoW7ayxDHox31VmwvA_nL2EnJDhsRDz_wWvLcIJ7QauCsisudxJlYdBJSx1X80vwjn3WmQRH1qTmQI2bhNFPFYvhaBtSNy1dcoSOuRauNYgIseFivJThlH9LVrZl3x_HJGL-pF-0XjpjiN7hQvr3pX0rQLK648MXWSmC1jCFl0FHn5Nc2neRgVKafn_jvT73WxdMm0ED2KBSuD7XqaqDVZFuwqoUi39Sf6SZGFuvLSBa0PqPpQ2yfzQYK39e1bvjBQfcG1oQ',
+    'Authorization': 'BQBgZ4R1OUrjHQUe9nuStIsJ4SKCVgeKL406TqQYLcu8h39_396P80ircTISqnEWhM0EC5PDEVp8NGnsehWjAEYAZlYn2PwQdgnlMuZp7I8eUfvojQqeqpFbgZR-nlIWn01vw3fyaplkFLpoICmNjAF3Nb7sa6E7Wa5q1qJgX_JVyg-q6Tiyi6fiqedZ9xH2DWAMRmQqi95OambC_hzvEZ9itINf8T2TSmAe_CxeGDdmmyF85letSp5PI1tE9llYfgPk-mcHXVDP9pDveqTzoqTPt5gBsVGJkyiSDm_2',
   };
 
    /* var params = {
