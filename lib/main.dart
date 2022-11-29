@@ -1,13 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:spotify_b2_project/providers/artics_provider.dart';
+import 'package:spotify_b2_project/providers/bottom_nav_provider.dart';
+import 'package:spotify_b2_project/providers/category_provider.dart';
+import 'package:spotify_b2_project/providers/news_provider.dart';
+import 'package:spotify_b2_project/providers/profile_provider.dart';
+import 'package:spotify_b2_project/providers/search_provider.dart';
+import 'package:spotify_b2_project/ui/pages/artics_page.dart';
+import 'package:spotify_b2_project/ui/pages/category_page.dart';
+import 'package:spotify_b2_project/ui/pages/home_pagee.dart';
+import 'package:spotify_b2_project/ui/pages/profile_page.dart';
+import 'package:spotify_b2_project/ui/widgets/bottom_bar_widget.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    child: const MyApp(),
+    providers: [
+      ChangeNotifierProvider(
+        create: (context) => CategoryProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => ProfileProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => BottomNavProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => ArticsProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => NewsProvider(),
+      ),
+      ChangeNotifierProvider(
+        create: (context) => SearchProvider(),
+      )
+    ],
+  ));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return ResponsiveSizer(
@@ -18,7 +57,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: const MyHomePage(title: 'F'),
+          home: const MyHomePage(),
         );
       },
     );
@@ -26,48 +65,25 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+  const MyHomePage({
+    super.key,
+  });
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+    return Consumer<BottomNavProvider>(
+      builder: (context, value, widget) {
+        return Scaffold(
+          extendBody: true,
+          body: value.pageChange(),
+          bottomNavigationBar: CustomBottomBarWidget(),
+        );
+      },
     );
   }
 }
