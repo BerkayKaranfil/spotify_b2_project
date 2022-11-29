@@ -10,7 +10,7 @@ class SearchProvider extends ChangeNotifier{
     searchList = (await getSearchDataService(query))!;
     notifyListeners();
   }
-
+// querygirilen yerine daha anlaşılır olması için başka ifade de yazılabilir. //
   getQuery(String querygirilen){
     query = querygirilen;
     getSearchData();

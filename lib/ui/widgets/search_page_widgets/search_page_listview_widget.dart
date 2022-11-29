@@ -51,12 +51,15 @@ class _SearchPageListviewWidgetState extends State<SearchPageListviewWidget> {
                         SizedBox(width: 6.w),
                         Column(
                           children: [
-                            Text(
-                              value.searchList.tracks!.items![0].album!.name!,
-                              style: TextStyle(
-                                  color: Colors.blue,
-                                  fontSize: 3.h,
-                                  fontWeight: FontWeight.w700),
+                            SizedBox(
+                              width: 58.w,
+                              child: Text(
+                                value.searchList.tracks!.items![0].album!.name!,
+                                style: TextStyle(
+                                    color: Colors.blue,
+                                    fontSize: 3.h,
+                                    fontWeight: FontWeight.w700),
+                              ),
                             ),
                             SizedBox(
                               height: 2.h,
