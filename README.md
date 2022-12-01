@@ -16,3 +16,5 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 https://user-images.githubusercontent.com/114856009/204550184-85d114d3-5582-4918-86e8-3afe802b9aca.mp4
+
+https://www.figma.com/file/jhfwX9Zn7thklmDb5zLczC/Spotify-Redesign---Free-Ui-Kit-(Light)-(Community)?node-id=0%3A1&t=XH1KsXfIG2DQRZXp-0
